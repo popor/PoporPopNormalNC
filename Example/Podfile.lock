@@ -1,0 +1,34 @@
+PODS:
+  - PoporFoundation/NSObject (0.0.23)
+  - PoporFoundation/NSString (0.0.23):
+    - PoporFoundation/PrefixOs
+  - PoporFoundation/PrefixCore (0.0.23):
+    - PoporFoundation/PrefixOs
+  - PoporFoundation/PrefixOs (0.0.23)
+  - PoporPopNormalNC (0.0.1):
+    - PoporUI/UIViewController
+  - PoporUI/UIViewController (0.0.17):
+    - PoporFoundation/NSObject
+    - PoporFoundation/NSString
+    - PoporFoundation/PrefixCore
+
+DEPENDENCIES:
+  - PoporPopNormalNC (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - PoporFoundation
+    - PoporUI
+
+EXTERNAL SOURCES:
+  PoporPopNormalNC:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  PoporFoundation: 317477aeb0fcd06b3fe933c856fc86b6f9c924ed
+  PoporPopNormalNC: 615348958fd5b9074527846dfcc6c8ef5ad4918c
+  PoporUI: b40fb458852b79482616afec8b7d0bf997a22487
+
+PODFILE CHECKSUM: ef900d147a2d918ce08f29f81b5efb0d8c12f2cd
+
+COCOAPODS: 1.6.0.beta.1

@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'PoporPopNormalNC_Example' do
+  pod 'PoporPopNormalNC', :path => '../'
+
+  target 'PoporPopNormalNC_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
