@@ -5,7 +5,7 @@ PODS:
   - PoporFoundation/PrefixCore (0.0.23):
     - PoporFoundation/PrefixOs
   - PoporFoundation/PrefixOs (0.0.23)
-  - PoporPopNormalNC (0.0.1):
+  - PoporPopNormalNC (0.0.2):
     - PoporUI/UIViewController
   - PoporUI/UIViewController (0.0.17):
     - PoporFoundation/NSObject
@@ -26,7 +26,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   PoporFoundation: 317477aeb0fcd06b3fe933c856fc86b6f9c924ed
-  PoporPopNormalNC: 615348958fd5b9074527846dfcc6c8ef5ad4918c
+  PoporPopNormalNC: c16ed71ac14949843ab052a517fdf11aa60478df
   PoporUI: b40fb458852b79482616afec8b7d0bf997a22487
 
 PODFILE CHECKSUM: ef900d147a2d918ce08f29f81b5efb0d8c12f2cd

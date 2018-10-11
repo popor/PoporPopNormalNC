@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'PoporPopNormalNC'
-    s.version          = '0.0.1'
+    s.version          = '0.0.2'
     s.summary          = '没有替换系统返回事件的功能.'
     
     s.homepage         = 'https://github.com/popor/PoporPopNormalNC'
