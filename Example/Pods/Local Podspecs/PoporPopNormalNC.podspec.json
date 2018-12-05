@@ -1,6 +1,6 @@
 {
   "name": "PoporPopNormalNC",
-  "version": "0.0.2",
+  "version": "0.0.03",
   "summary": "没有替换系统返回事件的功能.",
   "homepage": "https://github.com/popor/PoporPopNormalNC",
   "license": {
@@ -12,7 +12,7 @@
   },
   "source": {
     "git": "https://github.com/popor/PoporPopNormalNC.git",
-    "tag": "0.0.2"
+    "tag": "0.0.03"
   },
   "platforms": {
     "ios": "8.0"

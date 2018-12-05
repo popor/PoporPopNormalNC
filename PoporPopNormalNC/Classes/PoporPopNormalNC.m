@@ -53,12 +53,26 @@
     self.interactivePopGestureRecognizer.delegate = (id<UIGestureRecognizerDelegate>)self;
 }
 
-// 是否隐藏状态栏
+#pragma mark 侧滑判断
+- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer
+{
+    if (gestureRecognizer == self.interactivePopGestureRecognizer) {
+        if (self.viewControllers.count > 1) {
+            return YES;
+        }else{
+            return NO;
+        }
+    }else{
+        return YES;
+    }
+}
+
+#pragma mark 是否隐藏状态栏
 - (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated {
     [navigationController setNavigationBarHidden:viewController.hiddenNcBar animated:YES];
 }
 
-// 设置返回按钮title
+#pragma mark 设置返回按钮title
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
     if (self.isUpdateBarBackTitle) {
         self.topViewController.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:self.barBackTitle style:UIBarButtonItemStylePlain target:nil action:nil];
