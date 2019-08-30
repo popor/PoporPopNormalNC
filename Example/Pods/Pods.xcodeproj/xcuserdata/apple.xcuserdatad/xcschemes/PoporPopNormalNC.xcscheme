@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2CFCDB8A330F5DD2D0E583C78F042342"
+               BlueprintIdentifier = "196FB158A134FBEDA6BFBFEE1DAD1ED4"
+               BuildableName = "PoporPopNormalNC.framework"
                BlueprintName = "PoporPopNormalNC"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "PoporPopNormalNC.framework">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
