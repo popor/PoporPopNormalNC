@@ -20,6 +20,9 @@ it, simply add the following line to your Podfile:
 pod 'PoporPopNormalNC'
 ```
 
+1.2
+didShowViewController: 这个函数也设置隐藏函数代码, 防止其他第三方sdk多次自主修改状态.
+
 ## Author
 
 popor, 908891024@qq.com

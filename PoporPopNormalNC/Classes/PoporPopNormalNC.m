@@ -72,6 +72,10 @@
     [navigationController setNavigationBarHidden:viewController.hiddenNcBar animated:YES];
 }
 
+- (void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated {
+    [navigationController setNavigationBarHidden:viewController.hiddenNcBar animated:YES];
+}
+
 #pragma mark 设置返回按钮title
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
     if (self.isUpdateBarBackTitle) {
