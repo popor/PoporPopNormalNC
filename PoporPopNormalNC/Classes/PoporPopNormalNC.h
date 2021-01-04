@@ -26,6 +26,9 @@
 @property (nonatomic        ) BOOL autoHidesBottomBarWhenPushed;
 @property (nonatomic        ) BOOL forbiddenPushSameViewController;
 
+// 内部参数
+@property (nonatomic        ) BOOL updatedInteractivePopGestureRecognizerDelegate;
+
 - (void)setInteractivePopGRDelegate;
 
 @end

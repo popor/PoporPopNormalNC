@@ -41,7 +41,8 @@
     self.navigationBar.translucent = NO;
     self.delegate                  = self;
     
-    [self setInteractivePopGRDelegate];
+    // 不能直接在此设置delegate, 否则第一个push的vc横竖屏有问题.
+    // [self setInteractivePopGRDelegate];
 }
 
 - (void)setBarBackImage:(UIImage *)barBackImage{
@@ -50,7 +51,13 @@
 }
 
 - (void)setInteractivePopGRDelegate {
-    self.interactivePopGestureRecognizer.delegate = (id<UIGestureRecognizerDelegate>)self;
+    if (!self.updatedInteractivePopGestureRecognizerDelegate) {
+        // push之后再设置, 这样不会影响第二个push页面的横竖屏问题.
+        if (self.viewControllers.count == 1) {
+            self.updatedInteractivePopGestureRecognizerDelegate = YES;
+            self.interactivePopGestureRecognizer.delegate = (id<UIGestureRecognizerDelegate>)self;
+        }
+    }
 }
 
 #pragma mark 侧滑判断
@@ -90,6 +97,9 @@
                 viewController.hidesBottomBarWhenPushed = YES;
             }
         }
+        // push之后再设置, 这样不会影响第二个push页面的横竖屏问题.
+        [self setInteractivePopGRDelegate];
+        
         [super pushViewController:viewController animated:animated];
     }
 }
